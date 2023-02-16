@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.Pages.Register"
+             Title="Register">
+
+
+    <Grid BackgroundColor="{StaticResource Secondary}" >
+
+
+        <StackLayout Margin="10" >
+           
+
+            <StackLayout Margin="0,40">
+                <Label FontSize="32" Text="College Diary" HorizontalOptions="Center"/>
+            </StackLayout>
+
+            <StackLayout>
+                <Label FontFamily="MontserratRegular" TextColor="{StaticResource Primary}" 
+                       FontSize="16" Text="Name"/>
+                <Grid Margin="0,5">
+                    <Frame Opacity="0.3" BackgroundColor="White" CornerRadius="5"/>
+                    <Entry BackgroundColor="Transparent" Placeholder="Enter name" 
+                           TextColor="Black" Margin="5,0"
+                           PlaceholderColor="Gray" />
+
+                </Grid>
+
+                <Label FontFamily="MontserratRegular" TextColor="{StaticResource Primary}" 
+                       FontSize="16" Text="College University"/>
+                <Grid Margin="0,5">
+                    <Frame Opacity="0.3" BackgroundColor="White" CornerRadius="5"/>
+                    <Entry BackgroundColor="Transparent" Placeholder="Enter College University" 
+                           TextColor="Black" Margin="5,0"
+                           PlaceholderColor="Gray" />
+
+                </Grid>
+
+                <Label FontFamily="MontserratRegular" TextColor="{StaticResource Primary}" 
+                       FontSize="16" Text="Email"/>
+                <Grid Margin="0,5">
+                    <Frame Opacity="0.3" BackgroundColor="White" CornerRadius="5"/>
+                    <Entry BackgroundColor="Transparent" Placeholder="Enter Email" 
+                           TextColor="Black" Margin="5,0"
+                           PlaceholderColor="Gray" />
+
+                </Grid>
+
+                <Label FontFamily="MontserratRegular" TextColor="{StaticResource Primary}"  
+                       FontSize="16" Text="Password"/>
+                <Grid Margin="0,5">
+                    <Frame Opacity="0.3" BackgroundColor="White" CornerRadius="5"/>
+                    <Entry BackgroundColor="Transparent" Placeholder="Enter password" 
+                           TextColor="Black" Margin="5,0"
+                           PlaceholderColor="Gray" IsPassword="True"/>
+
+                </Grid>
+
+
+                <Label FontFamily="MontserratRegular" TextColor="{StaticResource Primary}"  
+                       FontSize="16" Text="Confirm Password"/>
+                <Grid Margin="0,5">
+                    <Frame Opacity="0.3" BackgroundColor="White" CornerRadius="5"/>
+                    <Entry BackgroundColor="Transparent" Placeholder="Confirm your password" 
+                           TextColor="Black" Margin="5,0"
+                           PlaceholderColor="Gray" IsPassword="True"/>
+
+                </Grid>
+            </StackLayout>
+
+            <Button Margin="0,15" BackgroundColor="{StaticResource Primary}"  
+                    Text="Register" TextColor="White" FontFamily="OpenSansBold"/>
+
+            <StackLayout VerticalOptions="FillAndExpand" Orientation="Horizontal">
+
+                <Label FontFamily="MontserratRegular" TextColor="{StaticResource Primary}" 
+                       FontSize="16" Text="Already have an account?" VerticalOptions="EndAndExpand" HorizontalOptions="StartAndExpand" 
+                       />
+                <Label FontFamily="MontserratRegular" TextColor="{StaticResource Primary}" 
+                       FontSize="16" Text="Login"  VerticalOptions="EndAndExpand" 
+                       HorizontalOptions="EndAndExpand" 
+                       />
+
+            </StackLayout>
+        </StackLayout>
+    </Grid>
+</ContentPage>

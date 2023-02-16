@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:tabView="clr-namespace:Syncfusion.Maui.TabView;assembly=Syncfusion.Maui.TabView"
+             x:Class="MauiApp1.NewPage1"
+             Title="NewPage1">
+    <Grid BackgroundColor="{StaticResource Secondary}" >
+
+
+        <StackLayout Margin="10" >
+            <Image Source="logo.png" HeightRequest="100"  HorizontalOptions="Center"/>
+
+            <StackLayout Margin="0,60">
+                <Label FontSize="32" Text="Welcome Back"/>
+
+            </StackLayout>
+
+            <StackLayout>
+                <Label FontFamily="MontserratRegular" TextColor="{StaticResource Primary}" 
+                       FontSize="16" Text="Username"/>
+                <Grid Margin="0,5">
+                    <Frame Opacity="0.3" BackgroundColor="White" CornerRadius="5"/>
+                    <Entry BackgroundColor="Transparent" Placeholder="Enter username" 
+                           TextColor="Black" Margin="5,0"
+                           PlaceholderColor="Gray" />
+
+                </Grid>
+
+                <Label FontFamily="MontserratRegular" TextColor="{StaticResource Primary}"  
+                       FontSize="16" Text="Password"/>
+                <Grid Margin="0,5">
+                    <Frame Opacity="0.3" BackgroundColor="White" CornerRadius="5"/>
+                    <Entry BackgroundColor="Transparent" Placeholder="Enter password" 
+                           TextColor="Black" Margin="5,0"
+                           PlaceholderColor="Gray" IsPassword="True"/>
+
+                </Grid>
+            </StackLayout>
+
+            <Button Margin="0,15" BackgroundColor="{StaticResource Primary}"  
+                    Text="Login" TextColor="White" Clicked="OnCounterClicked"  FontFamily="OpenSansBold"/>
+
+            <StackLayout VerticalOptions="FillAndExpand" Orientation="Horizontal">
+
+                <Label FontFamily="MontserratRegular" TextColor="{StaticResource Primary}" 
+                       FontSize="16" Text="Forgot Password?" VerticalOptions="EndAndExpand" HorizontalOptions="StartAndExpand" 
+                       />
+                <Label FontFamily="MontserratRegular" TextColor="{StaticResource Primary}" 
+                       FontSize="16" Text="Register"  VerticalOptions="EndAndExpand" 
+                       HorizontalOptions="EndAndExpand" 
+                       />
+
+            </StackLayout>
+        </StackLayout>
+    </Grid>
+</ContentPage>

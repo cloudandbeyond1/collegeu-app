@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="MauiApp1.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+     xmlns:local1="clr-namespace:MauiApp1"
+    xmlns:local="clr-namespace:MauiApp1.Pages"
+    Shell.FlyoutBehavior="Disabled">
+    <Tab>
+        <ShellContent
+        Title="My Account"
+        ContentTemplate="{DataTemplate local:MyAccount}"
+        Icon="icon_home" />
+       
+
+        <ShellContent
+        Title="Register"
+        ContentTemplate="{DataTemplate local:Register}"
+        Icon="icon_about" />
+
+        <ShellContent
+        Title="Subject"
+        ContentTemplate="{DataTemplate local:Subject}"
+        Icon="icon_about" />
+
+    </Tab>
+</Shell>
